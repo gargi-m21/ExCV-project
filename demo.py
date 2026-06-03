@@ -132,7 +132,7 @@ def execute_pipeline(image_path, cnn_weights, vit_weights, output_dir='assets'):
 
 if __name__ == '__main__':
     # Placeholders - update these strings locally when executing out-of-container
-    sample_image = "path/to/a/test_xray.png" 
+    sample_image = "assets/xray_sample.png" 
     cnn_path = "best_densenet_model.keras"
     vit_path = "best_vit_model.weights.h5"
     

@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Deep Learning Model Weights & Checkpoints
+*.keras
+*.h5
+*.weights.h5
+
+# Exclude raw image datasets from source tracking
+COVID_19_dataset/
