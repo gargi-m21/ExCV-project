@@ -39,13 +39,13 @@ Both networks were fine-tuned via transfer learning over identical splits at a $
 
 | Model Architecture | Test Loss | Test Accuracy | Test Precision | Test Recall |
 | --- | --- | --- | --- | --- |
-| **DenseNet-121 (CNN Baseline)** | 0.1866 | **93.79%** | 93.79% | 93.79% |
-| **Vision Transformer (ViT-B16)** | 0.3346 | **86.90%** | 87.11% | 84.50% |
+| **DenseNet-121 (CNN Baseline)** | 0.1849 | **93.56%** | 93.56% | 93.56% |
+| **Vision Transformer (ViT-B16)** | 0.3346 | **86.90%** | 88.21% | 85.98% |
 
 ### 2. Quantitative Faithfulness Verification
 Visual heatmaps can occasionally be deceptive or highlight random artifacts. To mathematically prove that the models rely on actual lung pathologies, the saliency maps were verified using two rigorous evaluation criteria:
-* **Saliency Map Shannon Entropy (DenseNet-121):** `5.0399 bits` (Indicates a highly localized, structurally focused explanation pattern within lung regions rather than diffuse global noise).
-* **Global Dataset AOPC Score:** `0.2589` (Area Over Perturbation Curve computed dynamically over 50 random test samples via feature-level activation masking at the terminal `relu` grid layer).
+* **Saliency Map Shannon Entropy (DenseNet-121):** `5.1025 bits` (Indicates a highly localized, structurally focused explanation pattern within lung regions rather than diffuse global noise).
+* **Global Dataset AOPC Score:** `0.2579` (Area Over Perturbation Curve computed dynamically over 50 random test samples via feature-level activation masking at the terminal `relu` grid layer).
 
 ---
 
